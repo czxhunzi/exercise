@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/uniapp?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+  jackson:
+    time-zone: Asia/Shanghai
+server:
+  port: 9090
+weixin:
+  jscode2session-url: https://api.weixin.qq.com/sns/jscode2session
+  appid: wxdd11659090cc73ce
+  secret: ebe38bf53e92070e4f21e3cc3c05228d
+  access: https://api.weixin.qq.com/cgi-bin/token
